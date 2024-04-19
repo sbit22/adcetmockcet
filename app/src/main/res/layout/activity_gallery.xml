@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallery">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activities"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textSize="25sp"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/red_200" /></LinearLayout>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alumni Meet 2024"
+        android:textColor="@color/red_200"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        android:fontFamily="@font/roboslab_b"
+        android:layout_marginTop="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/alumnilist"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:text="Lakshya : A Technical symposium organized by FY B Tech Student"
+            android:textColor="@color/red_200"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:fontFamily="@font/roboslab_b"
+            android:layout_marginTop="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lakshylist"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two day national level FDP on AI Assisted Scientific Writing and Publishing 24-25 Feb. 2024"
+            android:textColor="@color/red_200"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboslab_b"
+            android:layout_marginTop="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/twodaylist"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Exhibition of new arrivals at the Central Library (22 Feb. 2024)"
+            android:textColor="@color/red_200"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:fontFamily="@font/roboslab_b"
+            android:layout_marginTop="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/booklist"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annual Sports Week 2024"
+            android:textColor="@color/red_200"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:fontFamily="@font/roboslab_b"
+            android:layout_marginTop="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/sportlist"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textColor="@color/red_200"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            android:fontFamily="@font/roboslab_b"
+            android:layout_marginTop="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/eventlist"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Video">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/adcet_banner"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/platic_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/machine"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:adjustViewBounds="true"
+                app:videoId="FlRiUc-vHFc"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plastic Bottle Shredding Machine | Innovated &amp; Developed by ADCET | Sponsored By JSW Foundation"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/substain_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/sustain"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:adjustViewBounds="true"
+                app:videoId="EAk0pDKIN7k"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sustainable Initiatives at ADCET"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lakshy_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/laks"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:adjustViewBounds="true"
+                app:videoId="oItvKZXO9I0"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lakshy 2024"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/campus_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/camp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:adjustViewBounds="true"
+                app:videoId="c7QJLiHey-A"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADCET Campus"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

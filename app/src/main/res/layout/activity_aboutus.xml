@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Aboutus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About ADCET"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textSize="25sp"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/red_200" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/founder"
+            />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fm"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/sec"
+                />
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sm"
+                />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/ed"
+                    />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/edm"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/director"
+                    />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/dm"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center"
+            android:text=" The Annasaheb Dange College of Engineering and Technology (ADCET), Ashta is one of the iconoic public institutions of higher technical education in Western Maharashtra, distinguished by its compassion to produce engineers with competence for improving the human condition and building the nation. Established in 1999, ADCET, Ashta is an Autonomous institute affiliated to Shivaji University, Kolhapur, Maharashtra and approved by AICTE, New Delhi. The institute is NAAC accredited with “A++” grade, ISO 9001:2015 certified and runs programmes accredited by NBA, New Delhi. The community and culture of ADCET, Ashta are enriched by active bright students, dedicated teachers, and commitment to impart quality education in Engineering.\n\nADCET's campus is spread over 25 acres in the heart of the city of Ashta, Sangli, where 3000 undergraduate students build their lifelong friendships and connections while enjoying their educational journey. The College is a leader in academic excellence, with a particular focus on outcome based education by setting clear and unambiguous framework for curriculum planning along with clear standards for observable, measurable outcomes. We are continuously emphasizing on restructuring of curriculum, assessment and reporting practices in education to reflect the achievement of high order learning and mastery rather than the accumulation of course credits. College is focusing on “Student Centric Learning” by fostering close working relationships between faculty and students.\n\nWe, at ADCET, Ashta incline our students towards learning through conversation and collaboration, micro, mini and mega projects, community and social justice engagement, internships in industry, original research and experimentation. Our cooperative relationship with IITs, NITs, and research organizations enlarges the academic opportunities for our students and their social community. Our active ties to engineering and allied industries further extend the employment opportunities available at ADCET, Ashta. At ADCET, Ashta, we certainly believe with full confidence that we can prepare the next generation for future.\n\nADCET community rich in diversity offers every member an equal respect and provides an equal opportunity of academic excellence and employment. We offer robust student scholarship support while protecting against excessive student debt – because we believe a quality higher education should be affordable to all. We provide 100% support for availing educational loan through all nationalized banks, especially through IDBI Bank, Ashta branch.\n\nSo we emphasize the 4 C's: COMPETENCE | CONFIDENCE | COMMITMENT | COMPASSION"
+            android:fontFamily="@font/roboslab_r"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vision :"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/red_200"
+            android:fontFamily="@font/roboslab_b"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/aboutuspvpit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center"
+            android:text="To be a Leader in producing professionally competent engineers. "
+            android:fontFamily="@font/roboslab_r"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Misson :"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/red_200"
+            android:fontFamily="@font/roboslab_b"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/aboutvision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center"
+            android:text="We,Annasaheb Dange College of Engineering &amp; Technology, Ashta, are committed to achieve our vision by,\n•	M1. Imparting effective outcome based education.\n•	M2. Preparing students through skill oriented courses to excel in their profession with ethical values.\n•	M3. Promoting research to benefit the society.\n•	M4. Strengthening relationship with all the stakeholders."
+            android:fontFamily="@font/roboslab_r"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quality Policy"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/red_200"
+            android:fontFamily="@font/roboslab_b"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/aboutqualitypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center"
+            android:text="We intend to continually enhance performance of our institute through,\n•	Functioning in stuctured, organized &amp; co-ordinated manner.\n•	Trying to be conscious about our responsibilities and authorities at formal &amp; informal levels.\n•	Taking every possible initiative in the role assigned."
+            android:fontFamily="@font/roboslab_r"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salient Features :"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/red_200"
+            android:fontFamily="@font/roboslab_b"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/aboutsalient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center"
+            android:text="•	An Autonomous Institute\n•	NBA Accredited Programs\n•	NAAC 'A++' GRADE Institute\n•	Accredited by TCS, Mumbai\n•	Largest Infrastructure facilities with modern amenities\n•	Modern state-of-art laboratories\n•	Final year results above 95%\n•	College bus service for students\n•	Placement in Reputed Companies and MNC's\n•	Excellent Hostel Facility for Students\n•	Well qualified &amp; experienced faculty members.\n•	Huge playground, beautiful and healthy campus.\n•	500 Mbps leased line internet connectivity.\n•	On campus ATM Banking Facility.\n•	All Classrooms with excellent modern facilities and CCTV Camera's.\n•	Excellent connectivity from Islampur, Kolhapur &amp; Sangli.\n"
+            android:fontFamily="@font/roboslab_r"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>

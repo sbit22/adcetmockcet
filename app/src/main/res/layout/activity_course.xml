@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Course">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboslab_b"
+                android:textSize="25sp"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/red_200" /></LinearLayout>
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingEnd="0dp">
+                <ImageView
+                    android:id="@+id/volumeupcu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_volume_up_24"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/volumedowncu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_volume_off_24"
+                    android:layout_gravity="right"
+                    android:visibility="visible"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/fcourse"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:text="1."-->
+<!--            android:textSize="17sp"-->
+<!--            android:fontFamily="@font/roboslab_l"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#6A0000" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:text="Mechanical Engineering"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Choice Code : "-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/roboslab_l"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628361210"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+<!--        -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" Intake :"-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/roboslab_l"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="17sp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:textColor="@color/purple_500" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="120"-->
+<!--            android:gravity="center"-->
+<!--            android:fontFamily="@font/roboslab_l"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textSize="17sp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:textColor="#000000" />-->
+<!--    </LinearLayout>-->
+<!--        -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="2."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#4C0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Computer Science &amp; Engineering"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628324210"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="180"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="3."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#FF6A0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Electrical Engineering"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628329310"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="120"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="4."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#FF6A0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Civil Engineering"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628319110"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="60"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="5."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#FF6A0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Aeronautical Engineering"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628300210"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="60"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="6."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#FF6A0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Food Technology"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628350310"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="30"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="7."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#FF6A0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Artificial Intelligence (AI) and Data Science"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628326310"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="60"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="8."-->
+<!--                android:textSize="17sp"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#FF6A0000" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:text="Computer Science &amp; Engineering (Internet of Things and Cyber Security Including Block Chain Technology.)"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textColor="#BC0000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Choice Code : "-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="628392010"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Intake :"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="@color/purple_500" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="60"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/roboslab_l"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="17sp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textColor="#000000" />-->
+<!--        </LinearLayout>-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:weightSum="4"
+                android:background="@color/blue_700">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="Sr. No."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Programs"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Program code"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Intake"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/white" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="1."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Mechanical Engineering"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628361210"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/border2"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="2."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Computer Science &amp; Engineering"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628324210"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="180"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="3."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Electrical Engineering"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628329310"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/border2"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="4."
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Civil Engineering"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628319110"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="5."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Aeronautical Engineering"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628300210"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/border2"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="6."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Food Technology"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628350310"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="7."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Artificial Intelligence (AI) and Data Science"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628326310"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/border2"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="8."
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Computer Science &amp; Engineering ( IOT and Cyber Security Including Block Chain Technology.)"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="628392010"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboslab_l"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

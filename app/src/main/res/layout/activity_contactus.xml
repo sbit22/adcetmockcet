@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contactus">
+
+    <LinearLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4DEDE"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboslab_r"
+                android:text="Sant Dnyaneshwar Shikshan Sanstha's"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/alardCollegeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Annasaheb Dange College of Engineering and Technology (ADCET), Ashta "
+                android:textAlignment="center"
+                android:fontFamily="@font/roboslab_b"
+                android:textColor="@color/blue_500"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboslab_r"
+                android:text="Address:"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/roboslab_r"
+                android:text="Ashta, Dist. Sangli, Maharashtra.416 301 "
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboslab_r"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:text="Phone :8600600770 / 8600600708 / 9921968585 / 9960674000"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboslab_r"
+                android:text="Email: info@adcet.in"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get In Touch With:"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="6"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/facebook"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/facebook"
+                />
+            <ImageButton
+                android:id="@+id/instagram"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/instagram"
+                />
+            <ImageButton
+                android:id="@+id/twitter"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/twitter"
+                />
+            <ImageButton
+                android:id="@+id/youtube"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:src="@drawable/youtube"
+                />
+            <ImageButton
+                android:id="@+id/linkedin"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:src="@drawable/linkedin"
+                />
+            <ImageButton
+                android:id="@+id/whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:src="@drawable/whatsapp"
+                />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardElevation="20dp"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+            <EditText
+                android:id="@+id/edUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter your name"
+                android:fontFamily="@font/roboslab_r"
+                android:drawablePadding="5dp"
+                android:inputType="textCapWords"
+                android:padding="8dp"/>
+
+            <EditText
+                android:id="@+id/edEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboslab_r"
+                android:hint="Enter your Email"
+                android:inputType="textCapWords"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/edUserContactNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:hint="Mobile No"
+                android:fontFamily="@font/roboslab_r"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="8dp"/>
+
+            <EditText
+                android:id="@+id/edSubject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboslab_r"
+                android:hint="Message Subject"
+                android:inputType="textCapWords"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/edMessage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboslab_r"
+                android:hint="Enter message/your Query"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textCapWords"
+                android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/red_200"
+            android:fontFamily="@font/roboslab_b"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Send Message" />
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/year"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/year"
+            android:layout_marginEnd="20dp"
+            />
+        <ImageView
+            android:id="@+id/nba"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/nba"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/adcetlogo"
+        />
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo2"
+        />
+    <TextView
+        android:id="@+id/colg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annasaheb Dange College of Engineering and Technology (ADCET), Ashta"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="@color/blue_500"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/naacimg"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/naac"
+        />
+    <TextView
+        android:id="@+id/naact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accredited by NAAC 'A++' Grade, Bangalore"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="@color/blue_500"
+        android:textSize="15sp"/>
+
+</LinearLayout>
